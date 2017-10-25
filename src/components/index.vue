@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div>
+  <div class="main_type">
+    <div class="test">
       {{ message }}<br>
       <input v-model="message"/>
     </div>
@@ -49,5 +49,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+  @media only screen and (min-width: 1025px) {
+    .main_type{
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .main_type{
+      float: left;
+    }
+  }
 </style>
